@@ -125,14 +125,24 @@ body {
 }
 .first-section {
   background-color: #2e2f42;
-
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url("../images/office-photo.jpg");
+  
   height: 600px;
   padding:188px 0;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  
+  
+  
 }
+
 .first-section h1 {
   height: 120px;
   text-align: center;
@@ -141,7 +151,10 @@ body {
   line-height: 1.07;
   color: #ffffff;
   max-width: 496px;
+  position:relative
 }
+
+
 .order {
   background-color: #4d5ae5;
   color: #ffffff;
@@ -171,6 +184,17 @@ body {
 .us{
   list-style: none;
   width: calc((100% - 72px) / 4);
+  
+}
+
+.antenna, .clock, .astronout, .diagram{
+  width:264px;
+  height:112px;
+  border:1px solid #8E8F99;
+  padding:24px 100px;
+  margin-bottom:8px;
+  border-radius: 4px;
+  background-color: #F4F4FD;
 }
 
 .about-us {
@@ -184,11 +208,10 @@ body {
   display: flex;
   padding-left:0;
   
+  
 }
-.about-us-text{
-  margin-bottom:8px;
-}
-.about-us .p {
+
+.about-us p {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
@@ -206,13 +229,12 @@ body {
 }
 .team {
   background-color: #f4f4fd;
-
   text-align: center;
   padding: 120px 0;
 }
-.team .us {
+.team .staff {
   width: 264px;
-  height: 380px;
+  height: 200px;
   align-items: center;
 }
 .team .first-item {
