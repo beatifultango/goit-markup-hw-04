@@ -219,10 +219,11 @@ body {
 }
 .team .our-team {
   display: flex;
+  
 }
 .ourTeam {
   text-align: center;
-  margin-bottom: 8px;
+  
   text-align: center;
   font-size: 36px;
   line-height: 1.1;
@@ -232,10 +233,12 @@ body {
   text-align: center;
   padding: 120px 0;
 }
-.team .staff {
-  width: 264px;
-  height: 200px;
-  align-items: center;
+.staff .title{
+  margin-top: 8px;
+}
+
+.title{
+  margin-bottom: 15px;
 }
 .team .first-item {
   box-shadow: #2e2f4214;
@@ -247,6 +250,7 @@ body {
   box-shadow: #2e2f4214;
   background-color: #ffffff;
   margin-right: 24px;
+  margin-top: 100px;
   
 }
 .team-card {
@@ -254,21 +258,60 @@ body {
   box-shadow: #2e2f4214;
 }
 .our-team{
-  margin-top:72px;
+  justify-content: center;
+  align-items: center;
  
 }
 .staff {
-  padding-top: 30px;
-  margin-bottom: 50px;
+  
+  padding: 32px 16px 32px 16px;
+  
+}
+.socials{
+  background-color: #4D5AE5;
+  border-radius: 50%;
+  margin-left:10px;
+
 }
 
 
 .div-portfolio-list,
 .div-portfolio{
   background-color: #fff;
+
 }
+.div-portfolio-list-item{
+  position: relative;
+  overflow: hidden;
+  list-style-type: none;
 
-
+}
+  
+.overlay{
+  padding: 40px 32px;
+  background-color: #4D5AE5;
+  color:#F4F4FD;
+  position: absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height:100%;
+  transform:translateY(100%);
+  transition:transform 250ms ease-in-out;
+}
+.overlay p{
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 2%;
+  width: 296px;
+  height:96px
+  
+}
+.div-portfolio-list-item:hover .overlay{
+  transform: translateY(0);
+}
 .portfolio .our-portfolio {
   text-align: center;
   font-size: 36px;
@@ -281,7 +324,7 @@ body {
   
 
 }
-.portfolio p {
+.div-team-portfolio-container .div-portfolio-list-text{
   font-weight: 400px;
   font-size: 16px;
   line-height: 0.2;
@@ -335,6 +378,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  font-weight: 400;
 }
 .div-team-portfolio-container {
   padding: 32px 16px;
@@ -344,7 +388,6 @@ body {
   text-align:left;
 }
 .div-portfolio-list-item{
-  list-style-type: none;
 }
 h2 {
   font-size: 20px;
