@@ -271,13 +271,24 @@ body {
   padding: 32px 16px 32px 16px;
   
 }
-.socials{
-  
-  border-radius: %;
-  fill:#4D5AE5 ;
+.social-media{
+  list-style-type: none;
+  display: flex;
+  gap:24px;
+  fill:#4d5ae5;
+  padding-left: 0;
+  padding-top: 10px;
 
 }
-
+.socials:hover {
+  fill: #404BBF;
+  transition-property: fill;
+  
+  
+}
+.socials{
+  
+}
 
 .div-portfolio-list,
 .div-portfolio{
@@ -537,6 +548,22 @@ footer {
   
   
 }
-.socials{
-  gap:25px;
+
+
+.social-links-footer{
+  list-style-type: none;
+  display: flex;
+  fill:#4D5AE5;
+  color:#F4F4FD;
+  padding:0;
+
+
+}
+.socials-footer:hover{
+  fill:#31D0AA;
+}
+
+.footer-items{
+  display: flex;
+  gap:100px;
 }
