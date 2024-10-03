@@ -202,6 +202,7 @@ body {
 }
 .order:hover {
   background-color: #404bbf;
+  transition: width 0.3s ease;
 }
 .about {
   justify-content: space-between;
@@ -361,6 +362,7 @@ body {
 .div-portfolio-list-item:hover .overlay {
   transform: translateY(0);
   opacity: 1;
+  transition: width 0.3s ease-in-out;
 }
 .portfolio .our-portfolio {
   text-align: center;
@@ -579,6 +581,7 @@ footer {
 .socials-footer:hover {
   fill: #31d0aa;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .footer-items {
