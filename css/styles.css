@@ -20,7 +20,7 @@ p {
   font-weight: inherit;
 }
 .container {
-  max-width: 1158px;
+  width: 1158px;
   text-align: center;
   justify-content: center;
   padding: 0 15px;
@@ -28,10 +28,9 @@ p {
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
-
   display: flex;
-  height: 72px;
-  padding-top: 36px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .page-title {
   font-family: "Raleway", sans-serif;
@@ -40,7 +39,7 @@ p {
   font-style: normal;
   line-height: 1.07;
   color: #4d5ae5;
-  padding-right: 50px;
+  
 }
 
 .page-menu-list {
@@ -70,7 +69,7 @@ p {
 .page-menu-list {
   gap: 40px;
   display: flex;
-  margin-right: 70px;
+  margin-left:76px;
 }
 .page-menu-list a {
   font-size: 16px;
@@ -154,12 +153,19 @@ body {
   margin: 0 auto;
 }
 
+
 .item {
   padding: 24px 0;
 }
 .first-section {
   background-color: #2e2f42;
-
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+  rgba(46, 47, 66, 0.7)),
+  url(../images/office-photo.jpg);
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   height: 600px;
   padding: 188px 0;
   display: flex;
@@ -167,6 +173,7 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
 .first-section h1 {
   height: 120px;
   text-align: center;
@@ -191,7 +198,7 @@ body {
   margin-top: 50px;
   border: none;
   padding: 16px, 32px, 16px, 32px;
-  margin-left: 160px;
+  margin-left: 480px;
 }
 .order:hover {
   background-color: #404bbf;
@@ -503,7 +510,8 @@ footer p {
 }
 footer {
   background-color: #2e2f42;
-  height: 200px;
+  
+  
 }
 .footer {
   font-family: "Raleway", sans-serif;
@@ -512,10 +520,18 @@ footer {
   font-weight: 700px;
   font-style: normal;
   padding: 50px;
+  display: flex;
 }
-.logo2 {
-  margin-bottom: 16px;
-  text-align: left;
+
+  
+.logo2{
+  text-align:left;
+ 
+
+}
+.footer-items{
+  display:flex;
+  gap:120px;
 }
 .footer .text {
   max-width: 264px;
@@ -529,10 +545,10 @@ footer {
 .span1 {
   color: #4d5ae5;
 }
+
 .social-media {
   margin: 0;
-  text-align: center;
-  margin-bottom: 100px;
+  justify-content: center;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -540,12 +556,14 @@ footer {
   padding-bottom: 16px;
   letter-spacing: 2%;
   color: #ffffff;
-  margin: 0;
+  
 }
+
 .social-links {
   display: flex;
   list-style-type: none;
-  justify-content: center;
+  
+  
 }
 
 .social-links-footer {
@@ -553,7 +571,10 @@ footer {
   display: flex;
   fill: #4d5ae5;
   color: #f4f4fd;
-  padding: 0;
+  
+  justify-content: center;
+  
+  
 }
 .socials-footer:hover {
   fill: #31d0aa;
