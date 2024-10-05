@@ -40,10 +40,12 @@ p {
   font-style: normal;
   line-height: 1.07;
   color: #4d5ae5;
+  
 }
 
 .page-menu-list {
   display: flex;
+
 }
 
 .contacts {
@@ -65,6 +67,7 @@ p {
 .navi {
   display: flex;
   align-items: center;
+  
 }
 .page-menu-list {
   gap: 40px;
@@ -85,11 +88,13 @@ p {
 a {
   color: #2e2f42;
   text-decoration: none;
+  
 }
 
 a:hover {
   color: #404bbf;
   cursor: pointer;
+ 
 }
 a:focus {
   color: #404bbf;
@@ -111,7 +116,7 @@ a:focus {
   bottom: -2px;
   left: 2px;
   position: absolute;
-  transition: width 0.3s ease;
+  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
   display: block;
 }
 
@@ -132,6 +137,7 @@ a:focus {
   width: 193px;
   height: 108px;
   padding-left: 10px;
+  transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts .mail-tel {
   list-style-type: none;
@@ -142,6 +148,7 @@ a:focus {
 
 .contacts a:hover {
   color: #404bbf;
+
 }
 
 body {
@@ -200,10 +207,11 @@ body {
   border: none;
   padding: 16px, 32px, 16px, 32px;
   margin-left: 480px;
+  transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order:hover {
   background-color: #404bbf;
-  transition: width 0.3s ease;
+  
 }
 .about {
   justify-content: space-between;
@@ -298,6 +306,7 @@ body {
 }
 .staff {
   padding-top: 20px;
+  
 }
 .our-team .team-card-others {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -309,11 +318,14 @@ body {
   display: flex;
   gap: 24px;
   fill: #4d5ae5;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   justify-content: center;
 }
-.social-icons {
+.socials {
   fill: #4d5ae5;
+}
+.socials{
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials:hover {
   fill: #404bbf;
@@ -527,6 +539,7 @@ footer {
 
 .logo2 {
   text-align: left;
+  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-items {
   display: flex;
@@ -556,6 +569,7 @@ footer {
   letter-spacing: 2%;
   color: #ffffff;
   justify-content: left;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links {
@@ -570,20 +584,31 @@ footer {
   fill: #4d5ae5;
   color: #f4f4fd;
   gap: 16px;
-
+  
   justify-content: center;
 }
 
+
 .footer-links{
-  fill:#4D5AE5;
+  fill:var(--color1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .socials-footer:hover {
   fill: #31d0aa;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .footer-items {
   display: flex;
   gap: 100px;
+}
+
+.socials {
+  fill:var(--color1);
+  transition:fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.socials:hover{
+  --color1:#404BBF;
 }
