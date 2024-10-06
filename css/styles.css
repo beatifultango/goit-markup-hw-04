@@ -224,10 +224,7 @@ body {
   list-style: none;
   width: calc((100% - 72px) / 4);
 }
-.antenna,
-.clock,
-.astronout,
-.diagram {
+.about-svg {
   width: 264px;
   height: 112px;
   border: 1px solid #8e8f99;
